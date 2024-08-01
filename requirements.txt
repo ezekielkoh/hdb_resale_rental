@@ -94,7 +94,7 @@ oauthlib==3.2.2
 opendatasets==0.1.22
 packaging==23.2
 pandas==2.2.1
-pandas-profiling==2.9.0
+pandas-profiling
 parso==0.8.3
 pexpect==4.8.0
 phik==0.12.3
