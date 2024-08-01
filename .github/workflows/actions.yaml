@@ -35,9 +35,6 @@ jobs:
         pip install -r requirements.txt
         python main.py
 
-    - name: commit files
-      run:
-        git config --local user.email "ezekiel.kohck@gmail.com"
-        git config --local user.name "ezekielkoh"
+
 
     
