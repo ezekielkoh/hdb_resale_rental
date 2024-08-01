@@ -135,8 +135,7 @@ regex==2023.10.3
 requests==2.31.0
 retrying==1.3.3
 rich==13.3.5
-ruamel.yaml==0.17.21
-ruamel-yaml-conda==0.17.21
+ruamel.yaml
 scikit-learn==1.2.2
 scipy==1.12.0
 seaborn==0.12.2
