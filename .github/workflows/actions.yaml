@@ -39,9 +39,4 @@ jobs:
         git config --local user.email "ezekiel.kohck@gmail.com"
         git config --local user.name "ezekielkoh"
 
-    - push changes
-      uses: ad-m/github-push-action@v0.6.0
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master 
-      
+    
