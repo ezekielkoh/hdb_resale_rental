@@ -1,0 +1,11 @@
+resale:
+  url: "https://data.gov.sg/api/action/datastore_search?resource_id=d_8b84c4ee58e3cfc0ece0d773c8ca6abc"
+  params:
+    limit: 12000
+    sort: 'month desc'
+
+rental:
+  url: "https://data.gov.sg/api/action/datastore_search?resource_id=d_c9f57187485a850908655db0e8cfe651"
+  params:
+    limit: 12000
+    sort: 'rent_approval_date desc'
