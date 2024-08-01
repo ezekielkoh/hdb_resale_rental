@@ -12,3 +12,4 @@ if __name__ == '__main__':
 
     resale_df = fetch_data(**resale_config, refresh_data='resale.parquet')
     rental_df = fetch_data(**rental_config, refresh_data='rental.parquet')
+    print('works')
