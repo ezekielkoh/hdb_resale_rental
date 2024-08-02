@@ -9,6 +9,6 @@ if __name__ == '__main__':
     rental_config = read_config(key='rental')
     resale_config = read_config(key='resale')
 
-    resale_df = fetch_data(**resale_config, refresh_data='resale.parquet')
-    rental_df = fetch_data(**rental_config, refresh_data='rental.parquet')
+    resale_df = fetch_data(**resale_config, refresh_data='resale')
+    rental_df = fetch_data(**rental_config, refresh_data='rental')
     logger.info('Script completed')
