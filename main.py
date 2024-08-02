@@ -1,7 +1,5 @@
 from utils.io import (fetch_data,
-                      read_config,
-                      format_rental_df, 
-                      format_resale_df)
+                      read_config)
 from utils.io import read_config, save_data, config_logger
 
 
