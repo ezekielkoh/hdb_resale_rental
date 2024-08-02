@@ -33,8 +33,20 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        python main.py
 
+    - name: execute python script
+      run: python main.py
 
+    - name: commit files
+      run:
+        git config --local user.email "ezekiel.kohck@gmail.com"
+        git config --local user.name "ezekielkoh"
+        git add -A
+        git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
 
+    - name: push changes
+            uses: ad-m/github-push-action@v0.6.0
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              branch: master 
     
