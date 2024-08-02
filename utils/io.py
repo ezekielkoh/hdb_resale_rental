@@ -36,11 +36,11 @@ def fetch_data(url: str, params: dict, refresh_data: str = None) -> pd.DataFrame
 
     # check if refresh_data file exists
     if refresh_data:
-        if refresh_data not in os.listdir('./data'):
+        if refresh_data+'.parquet' not in os.listdir('./data'):
             raise FileNotFoundError(f'{refresh_data} not found in data folder')
         
         print('Merging Records...')
-        current_df = pd.read_parquet(f'./data/{refresh_data}')
+        current_df = pd.read_parquet(f'./data/{refresh_data}.parquet')
         new_df = pd.DataFrame(resp.json()['result']['records'])
         if refresh_data.__contains__('resale'):
             new_df = format_resale_df(new_df)
