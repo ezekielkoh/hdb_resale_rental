@@ -11,8 +11,8 @@ on:
   schedule:
     - cron: '0 2 15 * *' # every day at 10am UTC+8
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
 jobs:
   build:
