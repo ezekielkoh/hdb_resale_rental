@@ -2,17 +2,11 @@ from utils.io import (fetch_data,
                       read_config,
                       format_rental_df, 
                       format_resale_df)
-from utils.io import read_config, save_data
-
-import logging
+from utils.io import read_config, save_data, config_logger
 
 
 if __name__ == '__main__':
-    log_file = 'logs/pipeline.log'
-    logging.basicConfig(level=logging.INFO, 
-                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_file)])
-    
-    logger = logging.getLogger(__name__)
+    logger = config_logger('pipeline', file_path='logs/pipeline.log')
     logger.info('Running script')
     rental_config = read_config(key='rental')
     resale_config = read_config(key='resale')

@@ -7,6 +7,7 @@ import pandas as pd
 import requests 
 from utils.benchmark import perf
 import os
+import logging
 
 def read_config(key: str = None) -> dict:
     """ 
@@ -89,3 +90,24 @@ def save_data(df: pd.DataFrame, file_name: str) -> None:
     df.to_csv(f'./data/{file_name}.csv', index=False)
     df.to_parquet(f'./data/{file_name}.parquet', index=False)
     print(f"CSV and Parquet files saved to ../data/{file_name}")
+
+def config_logger(name, file_path=None, streaming=None, level=logging.INFO):
+    '''
+    Configures logger for logging
+    '''
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+    if file_path:
+        file_handler = logging.FileHandler(file_path, mode='w')
+        file_handler.setLevel(level)
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+    
+    if streaming:
+        stream_handler = logging.StreamHandler()
+        stream_handler.setFormatter(formatter)
+        logger.addHandler(stream_handler)
+
+    return logger
