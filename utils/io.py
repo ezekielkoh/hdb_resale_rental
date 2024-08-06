@@ -100,7 +100,7 @@ def config_logger(name, file_path=None, streaming=None, level=logging.INFO):
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
     if file_path:
-        file_handler = logging.FileHandler(file_path, mode='w')
+        file_handler = logging.FileHandler(file_path)
         file_handler.setLevel(level)
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
