@@ -12,3 +12,9 @@
 2024-08-06 08:46:45,968 - pipeline - INFO - Fetching resale data
 2024-08-06 08:46:51,235 - pipeline - INFO - Fetching rental data
 2024-08-06 08:46:54,963 - pipeline - INFO - Script completed
+2024-08-07 00:30:52,782 - pipeline - INFO - Running script
+2024-08-07 00:30:52,782 - pipeline - INFO - Reading rental config file
+2024-08-07 00:30:52,785 - pipeline - INFO - Reading resale config file
+2024-08-07 00:30:52,787 - pipeline - INFO - Fetching resale data
+2024-08-07 00:30:58,191 - pipeline - INFO - Fetching rental data
+2024-08-07 00:31:02,030 - pipeline - INFO - Script completed
