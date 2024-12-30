@@ -210,3 +210,9 @@
 2024-12-23 00:36:28,401 - pipeline - INFO - Fetching resale data
 2024-12-23 00:36:35,736 - pipeline - INFO - Fetching rental data
 2024-12-23 00:36:39,630 - pipeline - INFO - Script completed
+2024-12-30 00:36:26,992 - pipeline - INFO - Running script
+2024-12-30 00:36:26,992 - pipeline - INFO - Reading rental config file
+2024-12-30 00:36:26,995 - pipeline - INFO - Reading resale config file
+2024-12-30 00:36:26,996 - pipeline - INFO - Fetching resale data
+2024-12-30 00:36:34,005 - pipeline - INFO - Fetching rental data
+2024-12-30 00:36:37,916 - pipeline - INFO - Script completed
