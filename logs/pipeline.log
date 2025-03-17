@@ -282,3 +282,9 @@
 2025-03-10 00:31:06,369 - pipeline - INFO - Fetching resale data
 2025-03-10 00:31:14,225 - pipeline - INFO - Fetching rental data
 2025-03-10 00:31:17,491 - pipeline - INFO - Script completed
+2025-03-17 00:38:27,296 - pipeline - INFO - Running script
+2025-03-17 00:38:27,296 - pipeline - INFO - Reading rental config file
+2025-03-17 00:38:27,299 - pipeline - INFO - Reading resale config file
+2025-03-17 00:38:27,300 - pipeline - INFO - Fetching resale data
+2025-03-17 00:38:34,786 - pipeline - INFO - Fetching rental data
+2025-03-17 00:38:38,972 - pipeline - INFO - Script completed
